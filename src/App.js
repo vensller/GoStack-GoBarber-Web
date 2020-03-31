@@ -10,12 +10,10 @@ import history from './services/history';
 
 const App = () => {
   return (
-    <>
+    <Router history={history}>
       <GlobalStyles />
-      <Router history={history}>
-        <Routes />
-      </Router>
-    </>
+      <Routes />
+    </Router>
   );
 };
 
